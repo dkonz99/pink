@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/style.min.css">
+	<script>
+    	document.createElement( "picture" );
+  	</script>
+  	<script src="scripts/picturefill.js" async></script>
+	<title>Pink Конкурс</title>
+</head>
+<body>
+	<div class="modal-wrapper"></div>
+	<header class="main-header">
+		<section class="menu-full">
+			<h2 class="visually-hidden">
+				Главное меню
+			</h2>
+			<nav class="menu-full__navigation">
+				<ul class="menu-full__list">
+					<li class="menu-full__item menu-full__logo">
+						<a class="menu-full__logo-link" href="index.html">
+						<picture>
+							<source media="(min-width:1250px)" srcset="images/logo-desktop.png">
+							<source media="(min-width:768px)" srcset="images/logo-table.png">
+							<img class="menu-full__logo-picture" src="images/logo-mobile.png"  alt="Логотип">	
+
+						</picture>
+						</a>
+						<button class="menu-full__button" type="button">
+							<img class="menu-full__button-picture" src="images/mobile-menu-close.png"  alt="Кнопка закрытия меню">	
+
+						</button>	
+					</li>
+					<li class="menu-full__item">
+						<a class="menu-full__link" href="index.html">
+							<p class="menu-full__text">
+								Главная
+							</p>
+						</a>
+					</li>
+					<li class="menu-full__item">
+						<a class="menu-full__link" href="photo.html">
+							<p class="menu-full__text">
+								Фотографии
+							</p>
+						</a>
+					</li>
+					<li class="menu-full__item">
+						<a class="menu-full__link" href="#">
+							<p class="menu-full__text">
+								Конкурс
+							</p>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<section class="menu-lite">
+			<h2 class="visually-hidden">
+				Сокращенное меню
+			</h2>
+			<p class="menu-lite__list">
+				<a class="menu-lite__logo-link" href="#">
+					<picture>
+						<source media="(min-width:1250px)" srcset="images/logo-desktop.png">
+						<source media="(min-width:768px)" srcset="images/logo-table.png">
+						<img class="menu-lite__logo-picture" src="images/logo-mobile.png"  alt="Логотип">	
+
+						</picture>
+				</a>
+				<button class="menu-lite__button" type="button">
+					<img class="menu-lite__button-picture" src="images/mobile-menu-open.png"  alt="Кнопка закрытия меню">	
+
+				</button>	
+			</p>
+		</section>
+		<section class="header-background">
+        	<p class="header-background__background">
+        	<picture>
+				<source media="(min-width:1250px)" srcset="images/header-background-desktop.jpg">
+				<source media="(min-width:768px)" srcset="images/header-background-tablet.jpg">
+				<img  src="images/header-background-mobile.jpg"  alt="Фон шапки">	
+			</picture> 
+		    </p>
+		<h1 class="header-background__header header-background__header--form">
+			Конкурс на самое безбашенное путешествие с Пинк
+		</h1>
+        </section>
+		
+	</header>
+	<div class="page-main">
+		<section class="error-popup">
+		<h2 class="error-popup__header">
+			Что-то пошло не так!
+		</h2>
+		<p class="error-popup__text">
+			Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+		</p>
+		<div class="error-popup__wrapper">
+		<button class="error-popup__button">
+			OK
+		</button>
+	    </div>
+	</section>
+	<section class="application-sent-popup">
+		<h2 class="application-sent-popup__header">
+			Ваша заявка отправлена
+		</h2>
+		<p class="application-sent-popup__text">
+			Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и 
+            оповестим вас.
+		</p>
+		<div class="application-sent-popup__wrapper">
+		<button class="application-sent-popup__button">
+			ЗАКРЫТЬ ОКНО
+		</button>
+	</div>
+	</section>
+		<section class="main-form">
+			<h2 class="visually-hidden">
+				Форма для конкурса
+			</h2>
+			<p class="main-form__condition">
+				Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+				 <span class="main-form__condition--tablet">
+				 Пожалуйста, заполните форму ниже:
+				</span>
+			</p>
+			<form class="main-form__form" method="post" action="https://echo.htmlacademy.ru">
+                
+				<div class="main-form__wrapper main-form__wrapper--name">
+				<div class="main-form__wrapper main-form__wrapper--flex">
+				<p class="main-form__wrapper">
+				<label class="main-form__label main-form__label--surname" for="surname">
+					Фамилия:
+				</label>
+			</p>
+			<p class="main-form__wrapper">
+				<input class="main-form__text main-form__text--surname" type="text" name="surname" id="surname"  placeholder="Укажите фамилию*" required data-validate>
+			</p>
+		</div>
+		<div class="main-form__wrapper main-form__wrapper--flex">
+			<p class="main-form__wrapper">
+				<label class="main-form__label main-form__label--name" for="name">
+					Имя:
+				</label>
+			</p>
+			<p class="main-form__wrapper">
+				<input class="main-form__text main-form__text--name" type="text" name="name" id="name"  placeholder="Введите ваше имя *" required data-validate>
+			</p>
+		</div>
+		<div class="main-form__wrapper main-form__wrapper--flex">
+			<p class="main-form__wrapper">
+				<label class="main-form__label main-form__label--patronymic" for="patronymic">
+					Отчество:
+				</label>
+			</p>
+			<p class="main-form__wrapper">
+				<input class="main-form__text main-form__text--patronymic" type="text" name="patronymic" id="patronymic"  placeholder="Ну и отчество тоже">
+			</p>
+		</div>
+	</div>
+		<div class="main-form__wrapper main-form__wrapper--fieldset">
+			<fieldset class="main-form__group">
+				<legend class="main-form__header-group main-form__header-group--achievements">
+					Ваши безбашенные
+                    достижения в путешествии
+				</legend>
+				<div class="main-form__wrapper main-form__wrapper--checkbox">
+				<div class="main-form__wrapper main-form__wrapper--checkbox-column">
+				<p class="main-form__wrapper">
+				<input class="main-form__checkbox"  type="checkbox" name="checkbox-1" id="checkbox-1" value="checkbox-1"  checked>
+				<label class="main-form__label main-form__label--checkbox" for="checkbox-1">
+					Сделал селфи с акулой
+				</label>
+			</p>
+			<p class="main-form__wrapper">
+				<input class="main-form__checkbox"  type="checkbox" name="checkbox-2" id="checkbox-2" value="checkbox-2" checked>
+				<label class="main-form__label main-form__label--checkbox" for="checkbox-2">
+					Обгорел на пляже
+				</label>
+			</p> 
+		</div>
+		<div class="main-form__wrapper main-form__wrapper--checkbox-column">
+			<p class="main-form__wrapper">
+				<input class="main-form__checkbox"  type="checkbox" name="checkbox-3" id="checkbox-3" value="checkbox-3">
+				<label class="main-form__label main-form__label--checkbox" for="checkbox-3">
+					Видел Чака Норриса
+				</label>
+			</p>
+			<p class="main-form__wrapper">
+				<input class="main-form__checkbox"  type="checkbox" name="checkbox-4" id="checkbox-4" value="checkbox-4">
+				<label class="main-form__label main-form__label--checkbox" for="checkbox-4">
+					Накупил сувениров
+				</label>
+			</p>
+		</div>
+		<div class="main-form__wrapper main-form__wrapper--checkbox-column">
+			<p class="main-form__wrapper">
+				<input class="main-form__checkbox"  type="checkbox" name="checkbox-5" id="checkbox-5" value="checkbox-5" checked>
+				<label class="main-form__label main-form__label--checkbox" for="checkbox-5">
+					Удержал башню
+				</label>
+			</p>
+			<p class="main-form__wrapper">
+				<input class="main-form__checkbox"  type="checkbox" name="checkbox-6" id="checkbox-6" value="checkbox-6">
+				<label class="main-form__label main-form__label--checkbox" for="checkbox-6">
+					Разгромил отель
+				</label>
+			</p>
+		</div>
+		</div>
+			</fieldset>
+			<fieldset class="main-form__group main-form__group--mobile">
+				<legend class="main-form__header-group main-form__header-group--contacts main-form__header-group--mobile">
+					Контактная информация
+				</legend>
+			<div class="main-form__wrapper main-form__wrapper--line-contacts">
+			<div class="main-form__wrapper main-form__wrapper--contacts">
+			<p class="main-form__wrapper">
+				<label class="main-form__label main-form__label--tel" for="tel">
+					Номер телефона
+				</label>
+			</p>
+			<p class="main-form__wrapper">
+				<input class="main-form__text main-form__text--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+			</p>
+		</div>
+		<div class="main-form__wrapper main-form__wrapper--contacts">
+			<p class="main-form__wrapper">
+				<label class="main-form__label main-form__label--email" for="email">
+					Адрес почты
+				</label>
+			</p>
+			<p class="main-form__wrapper">
+				<input class="main-form__text main-form__text--email" type="email" name="email" id="email" placeholder="Введите почту *" required data-validate>
+			</p>
+		</div>
+	</div>
+		</fieldset>
+			<fieldset class="main-form__group main-form__group--attachment">
+				<legend class="main-form__header-group main-form__header-group--attachment">
+					С каким приложением
+                    путешествовали?
+				</legend>
+				<p class="main-form__wrapper">
+					<input class="main-form__radio main-form__radio--ios" type="radio" name="radio" id="radio-ios" value="radio-ios" checked>
+					<label class="main-form__label main-form__label--radio" for="radio-ios">
+						Pink для iOS
+					</label>
+				</p>
+				<p class="main-form__wrapper">
+					<input class="main-form__radio main-form__radio--android" type="radio" name="radio" id="radio-android" value="radio-android">
+					<label class="main-form__label main-form__label--radio" for="radio-android">
+						Pink на Android
+					</label>
+				</p>
+				<p class="main-form__wrapper">
+					<input class="main-form__radio main-form__radio--windows" type="radio" name="radio" id="radio-windows" value="radio-windows">
+					<label class="main-form__label main-form__label--radio" for="radio-windows">
+						Windows Phone
+					</label>
+				</p>
+			</fieldset>
+		</div>
+	
+			<fieldset class="main-form__group main-form__group--emotions">
+				<legend class="main-form__header-group main-form__header-group--emotions">
+					Опишите свои эмоции
+				</legend>
+				<textarea class="main-form__textarea" name="textarea" id="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea><!-- Закрывающий тег идет сразу после открывающего -->
+				<label class="main-form__label main-form__label--textarea" for="textarea">
+					
+				</label>
+			</fieldset>
+			<div class="main-form__wrapper main-form__wrapper--button">
+			<button class="main-form__button" type="submit" value="Отправить">
+				Отправить форму
+			</button>
+			<p class="main-form__footnote">
+				<span class="main-form__star">
+					*
+				</span> — обязательные <span class="main-form__clarification-desktop">
+					для заполнения
+				</span> поля
+			</p>
+		    </div>
+			</form>
+		</section>
+	</div>
+	<footer class="main-footer">
+		<p class="main-footer__logo main-footer__logo--competition">
+			<a class="main-footer__link main-footer__link--competition" href="#">
+				<picture>
+				<source media="(min-width:1250px)" srcset="images/logo-desktop-footer.png">
+				<img src="images/logo-table-footer.png" alt="Логотип">
+			    </picture>
+			</a>
+		</p>
+		<ul class="main-footer__list main-footer__list--competition">
+			<li class="main-footer__item">
+				<a class="main-footer__icon main-footer__icon--twitter" href="#">
+					<img src="images/twitter.png" alt="Иконка твиттера">
+				</a>
+			</li>
+			<li class="main-footer__item">
+				<a class="main-footer__icon main-footer__icon--facebook" href="#">
+					<img src="images/facebook.png" alt="Иконка фейсбука">
+				</a>
+			</li>
+			<li class="photo-footer__item">
+				<a class="main-footer__icon main-footer__icon--youtube" href="#">
+					<img src="images/youtube.png" alt="Иконка youtube">
+				</a>
+			</li>
+		</ul>	
+	</footer>
+	<script src="scripts/all.js" type="module"></script>
+
+</body>
+</html>
