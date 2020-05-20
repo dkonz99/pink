@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/style.min.css">
+	<script>
+    	document.createElement( "picture" );
+  	</script>
+  	<script src="scripts/picturefill.js" async></script>
+	<title>Pink Фотографии</title>
+</head>
+<body>
+	<div class="modal-wrapper"></div>
+	<header class="main-header">
+		<section class="menu-full">
+			<h2 class="visually-hidden">
+				Главное меню
+			</h2>
+			<nav class="menu-full__navigation">
+				<ul class="menu-full__list">
+					<li class="menu-full__item menu-full__logo">
+						<a class="menu-full__logo-link" href="index.html">
+						<picture>
+							<source media="(min-width:1250px)" srcset="images/logo-desktop.png">
+							<source media="(min-width:768px)" srcset="images/logo-table.png">
+							<img class="menu-full__logo-picture" src="images/logo-mobile.png"  alt="Логотип">	
+
+						</picture>
+						</a>
+						<button class="menu-full__button" type="button">
+							<img class="menu-full__button-picture" src="images/mobile-menu-close.png"  alt="Кнопка закрытия меню">	
+
+						</button>	
+					</li>
+					<li class="menu-full__item">
+						<a class="menu-full__link" href="index.html">
+							<p class="menu-full__text">
+								Главная
+							</p>
+						</a>
+					</li>
+					<li class="menu-full__item">
+						<a class="menu-full__link" href="#">
+							<p class="menu-full__text">
+								Фотографии
+							</p>
+						</a>
+					</li>
+					<li class="menu-full__item">
+						<a class="menu-full__link" href="competition.html">
+							<p class="menu-full__text">
+								Конкурс
+							</p>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<section class="menu-lite">
+			<h2 class="visually-hidden">
+				Сокращенное меню
+			</h2>
+			<p class="menu-lite__list">
+				<a class="menu-lite__logo-link" href="#">
+					<picture>
+						<source media="(min-width:1250px)" srcset="images/logo-desktop.png">
+						<source media="(min-width:768px)" srcset="images/logo-table.png">
+						<img class="menu-lite__logo-picture" src="images/logo-mobile.png"  alt="Логотип">	
+
+						</picture>
+				</a>
+				<button class="menu-lite__button" type="button">
+					<img class="menu-lite__button-picture" src="images/mobile-menu-open.png"  alt="Кнопка закрытия меню">	
+
+				</button>	
+			</p>
+		</section>
+		<section class="header-background">
+        	<p class="header-background__background">
+        	<picture>
+				<source media="(min-width:1250px)" srcset="images/header-background-desktop.jpg">
+				<source media="(min-width:768px)" srcset="images/header-background-tablet.jpg">
+				<img  src="images/header-background-mobile.jpg"  alt="Фон шапки">	
+			</picture> 
+		    </p>
+		    <h1 class="header-background__header header-background__header--photo">
+			Фотографии
+            пользователей
+		</h1>
+        </section>
+		
+	</header>
+	<div class="page-main">
+		<section class="galary">
+			<h2 class="visually-hidden">
+				Галерея
+			</h2>
+			<p class="galary__text-start">
+				Взгляните на фотографии, которые выкладывают пользователи!
+                Видите, как не хватает ваших?
+			</p>
+			<div class="panorama__wrapper">
+				<p class="galary__panorama-nameplate">
+					ПАНОРАМА ДНЯ
+				</p>
+				<p class="galary__picture galary__picture--panorama">
+					<a class="galary__link" href="#">
+					<picture>
+                    <source media="(min-width:1250px)" srcset="images/panorama-desktop.jpg" >
+                    <source media="(min-width:768px)" srcset="images/panorama-tablet.jpg" >		
+					<img src="images/panorama-mobile.jpg" alt="Панорама дня">
+				</picture>
+				</a>
+				</p>
+				<div class="galary-description__wrapper galary-description__wrapper--panorama">
+					<h3 class="galary__header galary__header--panorama">
+						Анна 
+						<span class="galary__time galary__time--panorama">
+							(5 минут назад)
+						</span>
+					</h3>
+					<p class="galary__description galary__description--panorama">
+						Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+					</p>
+					<p class="galary__likes galary__likes--panorama">
+						Нравится: 215
+					</p>
+				</div>
+			</div>
+			<ul class="galary__list">
+				<li class="galary__item">
+				<p class="galary__picture">
+					<a class="galary__link" href="#">
+					<picture>
+                    <source media="(min-width:1250px)" srcset="images/photo-1-desktop.jpg" >
+                    <source media="(min-width:768px)" srcset="images/photo-1-tablet.jpg" >	
+					<img src="images/photo-1-mobile.jpg" alt="Фото галереи">
+				</picture>
+				</a>
+				</p>
+				<div class="galary-description__wrapper">
+					<h3 class="galary__header">
+						Левон 
+						<span class="galary__time">
+							(5 часов назад)
+						</span>
+					</h3>
+					<p class="galary__description">
+						Вчера он на луну летал, сегодня в руки к нам попал.
+					</p>
+					<p class="galary__likes">
+						Нравится: 356
+					</p>
+				</div>
+	
+				</li>
+				<li class="galary__item">
+				<p class="galary__picture">
+					<a class="galary__link" href="#">
+						<picture>
+                    <source media="(min-width:1250px)" srcset="images/photo-2-desktop.jpg" >
+                    <source media="(min-width:768px)" srcset="images/photo-2-tablet.jpg" >
+					<img src="images/photo-2-mobile.jpg" alt="Фото галереи">
+				</picture>
+				</a>
+				</p>
+				<div class="galary-description__wrapper">
+					<h3 class="galary__header">
+						Антон
+						<span class="galary__time">
+							(12 часов назад)
+						</span>
+					</h3>
+					<p class="galary__description">
+						Соседи будут рады!
+					</p>
+					<p class="galary__likes">
+						Нравится: 666
+					</p>
+				</div>
+	
+				</li>
+				<li class="galary__item">
+				<p class="galary__picture">
+					<a class="galary__link" href="#">
+					<picture>
+                    <source media="(min-width:1250px)" srcset="images/photo-3-desktop.jpg" >
+                    <source media="(min-width:768px)" srcset="images/photo-3-tablet.jpg" >
+					<img src="images/photo-3-mobile.jpg" alt="Фото галереи">
+				</picture>
+				</a>
+				</p>
+				<div class="galary-description__wrapper">
+					<h3 class="galary__header">
+						Борис 
+						<span class="galary__time">
+							(20 часов назад)
+						</span>
+					</h3>
+					<p class="galary__description">
+						Здесь могла быть ваша цитата о высоком и вечном.
+					</p>
+					<p class="galary__likes">
+						Нравится: 215
+					</p>
+				</div>
+	
+				</li>
+				<li class="galary__item">
+				<p class="galary__picture">
+					<a class="galary__link" href="#">
+					<picture>
+                    <source media="(min-width:1250px)" srcset="images/photo-4-desktop.jpg" >
+                    <source media="(min-width:768px)" srcset="images/photo-4-tablet.jpg" >
+					<img src="images/photo-4-mobile.jpg" alt="Фото галереи">
+				</picture>
+				</a>
+				</p>
+				<div class="galary-description__wrapper">
+					<h3 class="galary__header">
+						Сергей 
+						<span class="galary__time">
+							(25 часов назад)
+						</span>
+					</h3>
+					<p class="galary__description">
+						Самая кубанская в мире!
+					</p>
+					<p class="galary__likes">
+						Нравится: 4
+					</p>
+				</div>
+	
+				</li>
+				<li class="galary__item">
+				<p class="galary__picture">
+					<a class="galary__link" href="#">
+					<picture>
+                    <source media="(min-width:1250px)" srcset="images/photo-5-desktop.jpg" >
+                    <source media="(min-width:768px)" srcset="images/photo-5-tablet.jpg" >
+					<img src="images/photo-5-mobile.jpg" alt="Фото галереи">
+				</picture>
+				</a>
+				</p>
+				<div class="galary-description__wrapper">
+					<h3 class="galary__header">
+						Максим 
+						<span class="galary__time">
+							(40 часов назад)
+						</span>
+					</h3>
+					<p class="galary__description">
+						Где снег-то?
+					</p>
+					<p class="galary__likes">
+						Нравится: 150
+					</p>
+				</div>
+	
+				</li>
+				<li class="galary__item">
+				<p class="galary__picture">
+					<a class="galary__link" href="#">
+					<picture>
+                    <source media="(min-width:1250px)" srcset="images/photo-6-desktop.jpg" >
+                    <source media="(min-width:768px)" srcset="images/photo-6-tablet.jpg" >
+					<img src="images/photo-6-mobile.jpg" alt="Фото галереи">
+				</picture>
+				</a>
+				</p>
+				<div class="galary-description__wrapper">
+					<h3 class="galary__header">
+						Надежда 
+						<span class="galary__time">
+							(45 часов назад)
+						</span>
+					</h3>
+					<p class="galary__description">
+						Всем GM и взаимные лайки!
+					</p>
+					<p class="galary__likes">
+						Нравится: 2560
+					</p>
+				</div>
+	
+				</li>
+			</ul>
+			<p class="galary__text-finish">
+				Затмите их всех! <br>
+                Выкладывайте все, что накопилось в телефоне!
+			</p>
+		</section>
+		<section class="filter">
+			<h2 class="visually-hidden">
+				Фильтры
+			</h2>
+			<p class="filter__photo">
+				<picture>
+                    <source media="(min-width:1250px)" srcset="images/photo-filter-desktop.jpg" >
+                    <source media="(min-width:768px)" srcset="images/photo-filter-tablet.jpg" >
+					<img src="images/photo-filter-mobile.jpg" alt="Фото для показа настроек фильтра">
+				</picture>
+			</p>
+			<div class="filter__wrapper filter__wrapper--flex">
+			<div class="filter__setting">
+				<p class="filter__crop">
+				<a class="filter__crop-icon" href="#">
+					<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                  viewBox="0 0 561 561" style="enable-background:new 0 0 561 561;" xml:space="preserve">
+                    <g>
+	                    <g id="crop">
+		                 <path d="M408,357h51V153c0-28.05-22.95-51-51-51H204v51h204V357z M153,408V0h-51v102H0v51h102v255c0,28.05,22.95,51,51,51h255v102
+			             h51V459h102v-51H153z"/>
+	                    </g>
+                    </g>
+
+                    </svg>
+				</a>
+				<p class="filter__slider-container filter__slider-container--crop">
+					<input type="range" min="1" max="100" value="70" class="filter__slider filter__slider--tablet" id="slider-tablet-crop">
+                </p>
+                 
+             </p>
+             <p class="filter__fill">
+				<a class="filter__fill-icon" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M16.56 8.94L7.62 0 6.21 1.41l2.38 2.38-5.15 5.15c-.59.59-.59 1.54 0 2.12l5.5 5.5c.29.29.68.44 1.06.44s.77-.15 1.06-.44l5.5-5.5c.59-.58.59-1.53 0-2.12zM5.21 10L10 5.21 14.79 10H5.21zM19 11.5s-2 2.17-2 3.5c0 1.1.9 2 2 2s2-.9 2-2c0-1.33-2-3.5-2-3.5z"/><path fill-opacity=".36" d="M0 20h24v4H0z"/></svg>
+				</a>
+				<p class="filter__slider-container filter__slider-container--fill">
+                 <input type="range" min="1" max="100" value="20" class="filter__slider filter__slider--tablet" id="slider-tablet-fill">
+             </p>
+             </p>
+             <p class="filter__tint">
+				<a class="filter__tint-icon" href="#">
+					<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
+	                viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                    <g>
+	                <path  d="M8,3v10c2.762,0,5-2.238,5-5S10.762,3,8,3z"/>
+	                <path  d="M8,0C3.582,0,0,3.582,0,8s3.582,8,8,8s8-3.582,8-8S12.418,0,8,0z M8,14c-3.313,0-6-2.687-6-6
+		            s2.687-6,6-6s6,2.687,6,6S11.313,14,8,14z"/>
+                    </g>
+
+                    </svg>
+
+				</a>
+				<p class="filter__slider-container filter__slider-container--tint">
+                <input type="range" min="1" max="100" value="50" class="filter__slider filter__slider--tablet" id="slider-tablet-tint">
+            </p>
+            </p>
+			</div>
+            <p class="filter__slider-container filter__slider-container--mobile">
+             <input type="range" min="1" max="100" value="80" class="filter__slider filter__slider--mobile" id="slider-mobile">
+            </p>
+            <div class="filter__wrapper filter__wrapper--button">
+            <button class="filter__button filter__button--mobile" type="button">
+            	Запостить
+            </button><br>
+            <button class="filter__button filter__button--off filter__button--mobile" type="button">
+            	Отмена
+            </button>
+            </div>
+            </div>
+		</section>
+	</div>
+	<footer class="main-footer">
+		<p class="main-footer__logo">
+			<a class="main-footer__link main-footer__link--photo" href="#">
+				<picture>
+				<source media="(min-width:1250px)" srcset="images/logo-desktop-footer.png">
+				<img src="images/logo-table-footer.png" alt="Логотип">
+			    </picture>
+			</a>
+		</p>
+		<ul class="main-footer__list main-footer__list--photo">
+			<li class="main-footer__item">
+				<a class="main-footer__icon main-footer__icon--twitter" href="#">
+					<img src="images/twitter.png" alt="Иконка твиттера">
+				</a>
+			</li>
+			<li class="main-footer__item">
+				<a class="main-footer__icon main-footer__icon--facebook" href="#">
+					<img src="images/facebook.png" alt="Иконка фейсбука">
+				</a>
+			</li>
+			<li class="photo-footer__item">
+				<a class="main-footer__icon main-footer__icon--youtube" href="#">
+					<img src="images/youtube.png" alt="Иконка youtube">
+				</a>
+			</li>
+		</ul>	
+	</footer>
+	<script src="scripts/all.js"></script>
+</body>
+</html>
